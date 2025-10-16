@@ -86,7 +86,6 @@ common styles for all elements end here
   flex: 1 1 400px;
   max-width: 500px;
 }
-
 .hero-content h1 {
   font-size: 2.8rem;
   line-height: 1.3;
@@ -219,3 +218,117 @@ common styles for all elements end here
 }
 
 /* hero section styles end here */
+/* about section style start here */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f9fcff;
+  color: #222;
+}
+
+.about {
+  padding: 80px 8%;
+  background: #fff;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.about-image {
+  flex: 1 1 450px;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.about-content {
+  flex: 1 1 450px;
+}
+
+.about-btn {
+  background: #e8f0ff;
+  color: #267cff;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 16px;
+}
+
+.about-content h2 {
+  font-size: 2rem;
+  color: #000;
+  margin-bottom: 18px;
+  line-height: 1.4;
+}
+
+.about-content p {
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 40px;
+}
+
+.about-stats {
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.stat h3 {
+  font-size: 1.6rem;
+  color: #267cff;
+}
+
+.stat p {
+  font-size: 0.95rem;
+  color: #777;
+  margin-top: 6px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-stats {
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .about-content h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .about {
+    padding: 60px 5%;
+  }
+
+  .stat h3 {
+    font-size: 1.4rem;
+  }
+
+  .about-content p {
+    font-size: 0.95rem;
+  }
+}
+
+/* about section style end here */
