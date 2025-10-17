@@ -899,6 +899,16 @@ common styles for all elements end here
   }
 }
 @media (max-width: 768px) {
+  .feature {
+    text-align: left;
+  }
+  
+  .why-choice-badge {
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .why-choice-inner {
     grid-template-columns: 1fr;
     text-align: center;
