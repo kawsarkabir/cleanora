@@ -226,10 +226,7 @@ common styles for all elements end here
   font-family: "Poppins", sans-serif;
 }
 
-body {
-  background: #f9fcff;
-  color: #222;
-}
+ 
 
 .about {
   padding: 80px 8%;
@@ -332,3 +329,403 @@ body {
 }
 
 /* about section style end here */
+/* why choices us styles start here */
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.content {
+  flex: 1;
+}
+
+.why-choice-badge {
+  background-color: #e6edff;
+  color: #3366ff;
+  padding: 6px 14px;
+  border-radius: 6px;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.feature-icon {
+  font-size: 20px;
+  background-color: #e6edff;
+  color: #3366ff;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.feature-text {
+  font-size: 15px;
+}
+
+.feature-text strong {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.images {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.top-image {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.top-image img,
+.bottom-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.feedback {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.feedback-info {
+  font-size: 15px;
+}
+
+.rating {
+  font-size: 26px;
+  font-weight: 700;
+  color: #111;
+}
+
+.stars {
+  color: gold;
+  font-size: 18px;
+}
+
+.bottom-image {
+  width: 150px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.images-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.avatars {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .images-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .bottom-image {
+    width: 100%;
+  }
+}
+/* why choices us styles end here */
+/*  */
+ 
+
+.pricing-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-header .section-badge {
+  display: inline-block;
+  background-color: #e6edff;
+  color: #3366ff;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.section-header h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 10px 0 40px;
+}
+
+/* Pricing Cards */
+.plans-container {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.plan-card {
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  padding: 30px 24px;
+  width: 300px;
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.plan-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.price {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.price span {
+  font-size: 14px;
+  font-weight: 400;
+  color: #555;
+}
+
+.plan-description {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.plan-features {
+  list-style: none;
+  font-size: 14px;
+  color: #111;
+  margin-bottom: 20px;
+}
+
+.plan-features li {
+  margin-bottom: 10px;
+}
+
+/* Specific Backgrounds */
+.plan-card.basic {
+  background-color: #f1f6ff;
+}
+
+.plan-card.pro {
+  background-color: #f1fcf4;
+}
+
+.plan-card.advanced {
+  background-color: #f1f6ff;
+}
+
+/* Buttons */
+.btn {
+  padding: 12px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn.blue {
+  background-color: #3366ff;
+}
+
+.btn.green {
+  background-color: #2ecc71;
+}
+
+/* Responsive */
+@media (max-width: 960px) {
+  .plans-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .plan-card {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+/*  */
+.video-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  background-color: #ffffff;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.video-thumbnail {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+/* Play Button Styling */
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+  background-color: #007bff;
+  color: white;
+  font-size: 24px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.play-button:hover {
+  background-color: #0056d2;
+}
+.footer {
+  background: linear-gradient(to right, #f8fbff, #f3f9fb);
+  padding: 60px 10%;
+  font-family: 'Inter', sans-serif;
+  color: #444;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+}
+
+.footer-column h4 {
+  font-size: 15px;
+  color: #111;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #555;
+  transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+  color: #007bff;
+}
+
+.logo {
+  color: #2d73ff;
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.brand p {
+  font-size: 13px;
+  color: #555;
+  max-width: 280px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.social-icons a {
+  color: #666;
+  margin-right: 12px;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #2d73ff;
+}
+
+.contact-info li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.contact-info i {
+  color: #2d73ff;
+  font-size: 13px;
+}
