@@ -10,58 +10,99 @@
     <!-- header section start here -->
     <header class="header-section">
       <!-- navbar section start here -->
+      <!-- navbar section start here -->
       <nav class="nav-wrapper container">
         <div class="logo">
           <h2 class="text-primary">Cleanora</h2>
         </div>
-        <ul class="nav-links">
+
+        <ul class="nav-links" id="navLinks">
           <li><a href="#">Home</a></li>
           <li><a href="#">Service</a></li>
           <li><a href="#">Project</a></li>
           <li><a href="#">Blog</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
+
         <div>
           <a href="#" class="login-btn">Log in</a>
         </div>
+        <!-- Overlay for mobile menu -->
+        <div class="overlay" id="overlay"></div>
+        <button class="menu-toggle" id="menuToggle">
+          <!-- Hamburger Icon -->
+          <svg
+            class="menu-icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M3 12H21M3 6H21M3 18H21"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+          <!-- Close Icon -->
+          <svg
+            class="close-icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M18 6L6 18M6 6L18 18"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+        </button>
       </nav>
       <!-- navbar section end here -->
-      <!-- hero section start heren -->
-      <section class="hero container">
-        <div class="hero-content">
-          <h1>Professional <span>Cleaning</span> You Can Trust</h1>
-          <p>
-            Our expert cleaners are trained, background-checked, and ready to
-            transform your space into something fresh and flawless.
-          </p>
-          <button class="btn">Our Service</button>
+      <!-- hero section start here -->
+      <section class="">
+        <div class="container hero">
+          <!-- Left Content -->
+          <div class="hero-content">
+            <h1>Professional <span>Cleaning</span> You Can Trust</h1>
+            <p>
+              Our expert cleaners are trained, background-checked, and ready to
+              transform your space into something fresh and flawless.
+            </p>
+            <button class="service-btn">Our Service</button>
 
-          <div class="stats">
-            <div class="stat">
-              <h3>100+</h3>
-              <p>Trusted Cleaners</p>
-            </div>
-            <div class="stat">
-              <h3>456+</h3>
-              <p>Affordable Clean</p>
+            <div class="stats">
+              <div class="stat">
+                <h3>100+</h3>
+                <p>Trusted Cleaners</p>
+              </div>
+              <div class="stat">
+                <h3>456+</h3>
+                <p>Affordable Clean</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="hero-images">
-          <div class="hero-images-left">
+          <!-- Right Images -->
+          <div class="hero-images">
             <div class="img-box main">
-              <img src="./assets/Frame 121.png" alt="Cleaner" />
+              <img
+                src="./assets/Frame 121.png"
+                alt="Professional cleaner working"
+              />
             </div>
             <div class="img-box small">
-              <img src="./assets/Ellipse 18.png" alt="Tools" />
+              <img src="./assets/Ellipse 18.png" alt="Cleaning supplies" />
             </div>
-          </div>
-          <div class="img-box bottom">
-            <img src="./assets/Frame 122.png" alt="Cleaner" />
-          </div>
-          <div class="badge">
-            <h3>80+</h3>
-            <p>Best Cleaners</p>
+            <div class="img-box bottom">
+              <img src="./assets/Frame 122.png" alt="Team cleaning floor" />
+            </div>
+
+            <div class="badge">
+              <h3>80+</h3>
+              <p>Best Cleaners</p>
+            </div>
           </div>
         </div>
       </section>
@@ -106,198 +147,217 @@
     </section>
     <!-- about section end here -->
     <!-- why choices us start here -->
-    <div class="container why-choice-section">
-      <div class="content">
-        <div class="why-choice-badge">Why Choose Us</div>
-        <h1>Professional Cleaning Services<br />You Can Trust</h1>
-        <p class="description">
-          Enjoy a cleaner, healthier space with our expert cleaning services.
-          Whether it’s your home or office, our trained team delivers spotless
-          results using safe, eco-friendly products. Book easily, schedule
-          flexibly, and let us handle the mess – so you can focus on what
-          matters most.
-        </p>
-
-        <div class="feature">
-          <div class="feature-icon">🧹</div>
-          <div class="feature-text">
-            <strong>Professional & Trusted Cleaners</strong>
-            Our trained team ensures top-quality cleaning with care, trust, and
-            attention to detail—every time.
-          </div>
-        </div>
-
-        <div class="feature">
-          <div class="feature-icon">⏰</div>
-          <div class="feature-text">
-            <strong>Flexible Scheduling & Affordable Rates</strong>
-            Book your cleaning service at your convenience. We offer transparent
-            pricing with no hidden fees.
-          </div>
-        </div>
-
-        <div class="feature">
-          <div class="feature-icon">🌿</div>
-          <div class="feature-text">
-            <strong>Eco-Friendly Cleaning Products</strong>
-            We care about your health and the environment—using only safe,
-            non-toxic, and eco-conscious products.
-          </div>
-        </div>
-      </div>
-
-      <div class="images">
-        <div class="top-image">
-          <img
-            src="./assets/Frame 80.png"
-            alt="Cleaning team"
-          />
-        </div>
-
-        <div class="images-row">
-          <div class="feedback-info">
-            <div class="avatars">
-              <div class="avatar">
-                <img src="https://via.placeholder.com/32" alt="" />
+    <!-- <section class="why-choice-section">
+      <div class="container why-choice-inner">
+        <div class="content">
+          <div class="why-choice-badge">Why Choose Us</div>
+          <h1>Professional Cleaning Services<br />You Can Trust</h1>
+          <p class="description">
+            Enjoy a cleaner, healthier space with our expert cleaning services.
+            Whether it’s your home or office, our trained team delivers spotless
+            results using safe, eco-friendly products. Book easily, schedule
+            flexibly, and let us handle the mess – so you can focus on what
+            matters most.
+          </p>
+          <div class="features">
+            <div class="feature">
+              <div class="feature-icon">
+                <img src="./assets/people-avator.png" alt="People Avatar" />
               </div>
-              <div class="avatar">
-                <img src="https://via.placeholder.com/32" alt="" />
+              <div class="feature-text">
+                <h4>Professional & Trusted Cleaners</h4>
+                <p>
+                  Our trained team ensures top-quality cleaning with care,
+                  trust, and attention to detail—every time.
+                </p>
               </div>
             </div>
-            <div class="feedback-title"><strong>Client Feedback</strong></div>
-            <div class="rating">4.5 <span class="stars">★★★★★</span></div>
-            <div style="font-size: 13px; color: #777">Overall Reviews</div>
+
+            <div class="feature">
+              <div class="feature-icon">
+                <img src="./assets/dollar-sign.png" alt="" />
+              </div>
+              <div class="feature-text">
+                <h4>Flexible Scheduling & Affordable Rates</h4>
+                <p>
+                  Book your cleaning service at your convenience. We offer
+                  transparent pricing with no hidden fees.
+                </p>
+              </div>
+            </div>
+
+            <div class="feature">
+              <div class="feature-icon">
+                <img src="./assets/eco-icon.png" alt="" />
+              </div>
+              <div class="feature-text">
+                <h4>Eco-Friendly Cleaning Products</h4>
+                <p>
+                  We care about your health and the environment—using only safe,
+                  non-toxic, and eco-conscious products.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="images">
+          <div class="top-image">
+            <img src="./assets/Frame 80.png" alt="Cleaning team" />
           </div>
 
-          <div class="bottom-image">
-            <img
-              src="https://via.placeholder.com/150?text=Cleaner"
-              alt="Cleaner with supplies"
-            />
+          <div class="images-row">
+            <div class="feedback-info">
+              <div class="avatars">
+                <div class="avatar">
+                  <img src="./assets/Ellipse 15.png" alt="" />
+                </div>
+                <div class="avatar">
+                  <img src="./assets/Ellipse 16.png" alt="" />
+                </div>
+              </div>
+              <div class="feedback-title"><strong>Client Feedback</strong></div>
+              <div class="rating">4.5 <span class="stars">★★★★★</span></div>
+              <div style="font-size: 13px; color: #777">Overall Reviews</div>
+            </div>
+
+            <div class="bottom-image">
+              <img src="./assets/Frame 81.png" alt="Cleaner with supplies" />
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section> -->
     <!-- why choices us end here -->
-      <section class="pricing-section">
-    <div class="section-header">
-      <span class="section-badge">Pricing Plan</span>
-      <h2>Cleaning Services That Fit Your Budget</h2>
-    </div>
-
-    <div class="plans-container">
-      <!-- Basic Plan -->
-      <div class="plan-card basic">
-        <h3>FOR BASIC</h3>
-        <div class="price">$450 <span>/service</span></div>
-        <p class="plan-description">
-          We believe in honest, upfront pricing with no hidden charges. Choose a plan that suits your needs—whether it’s a one-time deep clean or a regular maintenance schedule.
-        </p>
-        <ul class="plan-features">
-          <li>✔️ 1 Bedroom + 1 Bathroom</li>
-          <li>✔️ Floor sweeping & mopping</li>
-          <li>✔️ Dusting of surfaces</li>
-          <li>✔️ Basic kitchen cleaning</li>
-          <li>✔️ Trash removal</li>
-        </ul>
-        <button class="btn blue">Get started</button>
+    <section class="pricing-section">
+      <div class="section-header">
+        <span class="section-badge">Pricing Plan</span>
+        <h2>Cleaning Services That Fit Your Budget</h2>
       </div>
 
-      <!-- Professional Plan -->
-      <div class="plan-card pro">
-        <h3>Professional Plan</h3>
-        <div class="price">$650 <span>/service</span></div>
-        <p class="plan-description">
-          We believe in honest, upfront pricing with no hidden charges. Choose a plan that suits your needs—whether it’s a one-time deep clean or a regular maintenance schedule.
-        </p>
-        <ul class="plan-features">
-          <li>✔️ 2–3 Bedrooms + 2 Bathrooms</li>
-          <li>✔️ Deep floor cleaning (vacuum + mop)</li>
-          <li>✔️ Full kitchen cleaning (sink, counter, stove)</li>
-          <li>✔️ Dusting all surfaces & furniture</li>
-          <li>✔️ Bathroom sanitization</li>
-        </ul>
-        <button class="btn green">Get started</button>
+      <div class="plans-container">
+        <!-- Basic Plan -->
+        <div class="plan-card basic">
+          <h3>FOR BASIC</h3>
+          <div class="price">$450 <span>/service</span></div>
+          <p class="plan-description">
+            We believe in honest, upfront pricing with no hidden charges. Choose
+            a plan that suits your needs—whether it’s a one-time deep clean or a
+            regular maintenance schedule.
+          </p>
+          <ul class="plan-features">
+            <li>✔️ 1 Bedroom + 1 Bathroom</li>
+            <li>✔️ Floor sweeping & mopping</li>
+            <li>✔️ Dusting of surfaces</li>
+            <li>✔️ Basic kitchen cleaning</li>
+            <li>✔️ Trash removal</li>
+          </ul>
+          <button class="btn blue">Get started</button>
+        </div>
+
+        <!-- Professional Plan -->
+        <div class="plan-card pro">
+          <h3>Professional Plan</h3>
+          <div class="price">$650 <span>/service</span></div>
+          <p class="plan-description">
+            We believe in honest, upfront pricing with no hidden charges. Choose
+            a plan that suits your needs—whether it’s a one-time deep clean or a
+            regular maintenance schedule.
+          </p>
+          <ul class="plan-features">
+            <li>✔️ 2–3 Bedrooms + 2 Bathrooms</li>
+            <li>✔️ Deep floor cleaning (vacuum + mop)</li>
+            <li>✔️ Full kitchen cleaning (sink, counter, stove)</li>
+            <li>✔️ Dusting all surfaces & furniture</li>
+            <li>✔️ Bathroom sanitization</li>
+          </ul>
+          <button class="btn green">Get started</button>
+        </div>
+
+        <!-- Advanced Plan -->
+        <div class="plan-card advanced">
+          <h3>Advanced Plan</h3>
+          <div class="price">$950 <span>/service</span></div>
+          <p class="plan-description">
+            We believe in honest, upfront pricing with no hidden charges. Choose
+            a plan that suits your needs—whether it’s a one-time deep clean or a
+            regular maintenance schedule.
+          </p>
+          <ul class="plan-features">
+            <li>✔️ Full house cleaning</li>
+            <li>✔️ Deep cleaning of kitchen & appliances</li>
+            <li>✔️ Full bathroom sanitization</li>
+            <li>✔️ Ceiling fan, window, and curtain dusting</li>
+            <li>✔️ Trash removal & deodorizing</li>
+          </ul>
+          <button class="btn blue">Get started</button>
+        </div>
       </div>
-
-      <!-- Advanced Plan -->
-      <div class="plan-card advanced">
-        <h3>Advanced Plan</h3>
-        <div class="price">$950 <span>/service</span></div>
-        <p class="plan-description">
-          We believe in honest, upfront pricing with no hidden charges. Choose a plan that suits your needs—whether it’s a one-time deep clean or a regular maintenance schedule.
-        </p>
-        <ul class="plan-features">
-          <li>✔️ Full house cleaning</li>
-          <li>✔️ Deep cleaning of kitchen & appliances</li>
-          <li>✔️ Full bathroom sanitization</li>
-          <li>✔️ Ceiling fan, window, and curtain dusting</li>
-          <li>✔️ Trash removal & deodorizing</li>
-        </ul>
-        <button class="btn blue">Get started</button>
+    </section>
+    <!-- pricing section end here -->
+    <section class="video-section">
+      <div class="container">
+        <div class="video-container">
+          <img
+            src="./assets/video-container.png"
+            alt="Professional cleaning service"
+          />
+          <div class="play-button"></div>
+        </div>
       </div>
-    </div>
-  </section>
-  <!-- pricing section end here -->
-   <section class="video-section">
-  <div class="video-container">
-    <img src="https://via.placeholder.com/800x400?text=Cleaning+Video+Thumbnail" alt="Video Thumbnail" class="video-thumbnail">
-    <a href="#" class="play-button" aria-label="Play Video">
-      ▶
-    </a>
-  </div>
-</section>
-<section class="footer">
-  <div class="footer-container">
-    <div class="footer-column brand">
-      <h2 class="logo">Cleanora</h2>
-      <p>
-        Choose a plan that suits your needs — whether it’s a one-time deep clean
-        or a regular maintenance schedule.
-      </p>
-      <div class="social-icons">
-        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fas fa-magic"></i></a>
+    </section>
+    <section class="footer">
+      <div class="footer-container">
+        <div class="footer-column brand">
+          <h2 class="logo">Cleanora</h2>
+          <p>
+            Choose a plan that suits your needs — whether it’s a one-time deep
+            clean or a regular maintenance schedule.
+          </p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fas fa-magic"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Service</h4>
+          <ul>
+            <li><a href="#">Strategisk Arbetskraftplanering</a></li>
+            <li><a href="#">Lärande och Utveckling</a></li>
+            <li><a href="#">Människodata och Talangintelligens</a></li>
+            <li><a href="#">HR-teknik och AI</a></li>
+            <li><a href="#">Talangförvärv</a></li>
+            <li><a href="#">Våra Konsulter</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>About</h4>
+          <ul>
+            <li><a href="#">Om Oss</a></li>
+            <li><a href="#">Våra Konsulter</a></li>
+            <li><a href="#">Kunskapsbank</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Help</h4>
+          <ul class="contact-info">
+            <li>
+              <i class="fas fa-envelope"></i>
+              team@northboundgroup.se
+            </li>
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              Stockholm, Sverige
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <div class="footer-column">
-      <h4>Service</h4>
-      <ul>
-        <li><a href="#">Strategisk Arbetskraftplanering</a></li>
-        <li><a href="#">Lärande och Utveckling</a></li>
-        <li><a href="#">Människodata och Talangintelligens</a></li>
-        <li><a href="#">HR-teknik och AI</a></li>
-        <li><a href="#">Talangförvärv</a></li>
-        <li><a href="#">Våra Konsulter</a></li>
-      </ul>
-    </div>
-
-    <div class="footer-column">
-      <h4>About</h4>
-      <ul>
-        <li><a href="#">Om Oss</a></li>
-        <li><a href="#">Våra Konsulter</a></li>
-        <li><a href="#">Kunskapsbank</a></li>
-      </ul>
-    </div>
-
-    <div class="footer-column">
-      <h4>Help</h4>
-      <ul class="contact-info">
-        <li>
-          <i class="fas fa-envelope"></i>
-          team@northboundgroup.se
-        </li>
-        <li>
-          <i class="fas fa-map-marker-alt"></i>
-          Stockholm, Sverige
-        </li>
-      </ul>
-    </div>
-  </div>
-</section>
-
+    <script src="./app.js"></script>
   </body>
 </html>
