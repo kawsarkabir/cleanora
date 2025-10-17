@@ -907,11 +907,11 @@ common styles for all elements end here
   }
 }
 /* why choices us styles end here */
-/*  */
-
+/*  pricing section start here*/
 .pricing-section {
-  max-width: 1200px;
-  margin: 0 auto;
+  padding: 40px 0;
+}
+.section-header {
   text-align: center;
 }
 
@@ -920,10 +920,10 @@ common styles for all elements end here
   background-color: #e6edff;
   color: #3366ff;
   font-weight: 600;
-  padding: 6px 14px;
   border-radius: 6px;
   font-size: 14px;
   margin-bottom: 12px;
+  padding: 10px 24px;
 }
 
 .section-header h2 {
@@ -934,19 +934,21 @@ common styles for all elements end here
 
 /* Pricing Cards */
 .plans-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 24px;
   justify-content: center;
   flex-wrap: wrap;
 }
 
 .plan-card {
-  background-color: #f9f9f9;
+  border-radius: 16px;
+  box-shadow: 0px 2px 3px 0px rgba(189, 189, 189, 0.25);
+  background: rgba(254, 254, 254, 1);
   border-radius: 12px;
   padding: 30px 24px;
-  width: 300px;
+
   text-align: left;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 .plan-card h3 {
@@ -968,10 +970,16 @@ common styles for all elements end here
 }
 
 .plan-description {
-  font-size: 14px;
+  font-size: 13px;
   color: #666;
   line-height: 1.5;
   margin-bottom: 20px;
+  color: var(--Gray, rgba(105, 101, 101, 1));
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0%;
+  text-align: left;
 }
 
 .plan-features {
@@ -983,19 +991,32 @@ common styles for all elements end here
 
 .plan-features li {
   margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 /* Specific Backgrounds */
-.plan-card.basic {
-  background-color: #f1f6ff;
+
+.plan-card .basic-card {
+  border-radius: 8px;
+  background: rgba(241, 248, 255, 1);
+  padding: 20px;
+  margin-bottom: 20px;
 }
 
-.plan-card.pro {
-  background-color: #f1fcf4;
+.plan-card .pro {
+  border-radius: 8px;
+  background: rgba(246, 252, 248, 1);
+  padding: 20px;
+  margin-bottom: 20px;
 }
 
-.plan-card.advanced {
-  background-color: #f1f6ff;
+.plan-card .advanced {
+  border-radius: 8px;
+  background: rgba(241, 248, 255, 1);
+  padding: 20px;
+  margin-bottom: 20px;
 }
 
 /* Buttons */
