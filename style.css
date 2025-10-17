@@ -47,7 +47,7 @@ common styles for all elements end here
   position: relative;
 }
 
-.logo h2 {
+.nav-wrapper .logo h2 {
   font-weight: bold;
   color: #267cff;
   font-size: 1.8rem;
@@ -205,6 +205,11 @@ common styles for all elements end here
     background-color: #1b61d9;
   }
 }
+@media (max-width: 480px) {
+  .nav-wrapper .logo h2 {
+    padding-left: 5px;
+  }
+}
 /* navbar styles end here */
 /* hero section styles start here */
 /* Hero Section */
@@ -213,7 +218,7 @@ common styles for all elements end here
   justify-content: space-between;
   align-items: center;
   gap: 60px;
-  padding: 60px 20px;
+  padding: 60px 0;
   position: relative;
 }
 
@@ -346,7 +351,7 @@ common styles for all elements end here
 .img-box.main {
   top: 0;
   left: 0;
-  width: 280px;
+  width: 28 0px;
   height: 260px;
   z-index: 3;
 }
@@ -527,10 +532,6 @@ common styles for all elements end here
 }
 
 @media (max-width: 480px) {
-  body {
-    padding: 10px;
-  }
-
   .hero {
     padding: 30px 10px;
   }
@@ -567,8 +568,8 @@ common styles for all elements end here
   }
 
   .img-box.main {
-    width: 200px;
-    height: 190px;
+    width: 180px;
+    height: 160px;
     left: 0;
   }
 
@@ -868,10 +869,6 @@ common styles for all elements end here
 }
 
 @media (max-width: 900px) {
-  .container {
-    flex-direction: column;
-  }
-
   .images-row {
     flex-direction: column;
     align-items: flex-start;
